@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"/>
     <title>JS Documentation</title>
     <style>
-      * {
+    * {
   font-family: Roboto;
 }
 
@@ -17,7 +17,9 @@
   left: 0px;
   width: 300px;
   height: 100%;
-  border-right: solid #d8c3a5;
+  border-right: 2px solid #de9036;
+  background: #eae7dc;
+  z-index: 1;
 }
 
 #navbar ul {
@@ -28,19 +30,19 @@
 }
 
 #navbar li:hover {
-  background: #e98074;
+  background: #de9036;
 }
 
 #navbar li {
-  border-top: 1px solid #d8c3a5;
+  border-top: 1px solid #de9036;
   list-style: none;
   position: relative;
   width: 100%;
 }
 
 #navbar li:last-child {
-  border-top: 1px solid #d8c3a5;
-  border-bottom: 1px solid #d8c3a5;
+  border-top: 1px solid #de9036;
+  border-bottom: 1px solid #de9036;
   list-style: none;
   position: relative;
   width: 100%;
@@ -71,7 +73,7 @@
 }
 
 body {
-  background: #eae7dc;
+  background: #eeeeee;
 }
  
 main {
@@ -83,27 +85,27 @@ main {
 
 nav header {
   text-align: center;
-  color: #eae7dc;
-  background: #e98074;
+  color: #eeeeee;
+  background: #de9036;
   font-size: 1.3rem;
   padding: 10px;
   border-radius: 3px;
-  border: 2px solid #e98074;
+  border: 2px solid #de9036;
 }
 
 #main-doc header {
   text-align: center;
   color: #eae7dc;
-  background: #e98074;
+  background: #de9036;
   font-size: 1.3rem;
   padding: 10px;
   border-radius: 3px;
-  border: 2px solid #e98074;
+  border: 2px solid #de9036;
 }
 
 section {
   border-radius: 5px;
-  border: 2px solid #d8c3a5;
+  border: 2px solid #de9036;
   
   margin-top: 20px;
   margin-bottom: 20px;
@@ -124,19 +126,20 @@ code {
   word-break: normal;
   word-wrap: normal;
   line-height: 2;
-  background-color: rgb(233, 128, 116, .7);
-  color: #eae7dc;
+  color: #8e8d8a;
+  background: rgba(0,0,0,.05);
   padding: 15px;
   margin: 10px;
+  border: 2px solid #de9036;
   border-radius: 5px;
 }
 
-@media only screen and (max-width: 815px) {
+@media only screen and (max-width: 600px) {
   /* For mobile phones: */
 
 
   #navbar ul {
-    border: 1px solid #d8c3a5;
+    border: 1px solid #de9036;
     height: 300px;
     background: #eae7dc; 
   }
@@ -171,7 +174,7 @@ code {
     padding-right: 45px;
     min-width: 233px;
   }
-} 
+}
     </style>
   </head>
   <body>
