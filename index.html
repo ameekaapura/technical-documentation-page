@@ -6,180 +6,114 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"/>
     <title>JS Documentation</title>
     <style>
-    * {
-  font-family: Roboto;
-}
-
-#navbar {
-  position: fixed;
-  min-width: 290px;
-  top: 0px;
-  left: 0px;
-  width: 300px;
-  height: 100%;
-  border-right: 2px solid #de9036;
-  background: #eae7dc;
-  z-index: 1;
-}
-
-#navbar ul {
-  height: 88%;
-  padding: 0;
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-
-#navbar li:hover {
-  background: #de9036;
-}
-
-#navbar li {
-  border-top: 1px solid #de9036;
-  list-style: none;
-  position: relative;
-  width: 100%;
-}
-
-#navbar li:last-child {
-  border-top: 1px solid #de9036;
-  border-bottom: 1px solid #de9036;
-  list-style: none;
-  position: relative;
-  width: 100%;
-}
-
-#navbar a {
-  display: block;
-  padding: 10px 30px;
-  font-size: 1.1rem;
-  text-align: center;
-  text-decoration: none;
-  color: #8e8d8a;
-  cursor: pointer;
-}
-
-#navbar a:hover {
-  color: #eae7dc;
-}
-
-#reference a {
-  text-decoration: none;
-  font-style: italic;
-  color: #8e8d8a;
-}
-
-#reference a:hover {
-  text-decoration: underline;
-}
-
-body {
-  background: #eeeeee;
-}
- 
-main {
-  margin-left: 300px;
-  padding-left: 50px;
-  padding-right: 50px;
-  text-align: justify;
-}
-
-nav header {
-  text-align: center;
-  color: #eeeeee;
-  background: #de9036;
-  font-size: 1.3rem;
-  padding: 10px;
-  border-radius: 3px;
-  border: 2px solid #de9036;
-}
-
-#main-doc header {
-  text-align: center;
-  color: #eae7dc;
-  background: #de9036;
-  font-size: 1.3rem;
-  padding: 10px;
-  border-radius: 3px;
-  border: 2px solid #de9036;
-}
-
-section {
-  border-radius: 5px;
-  border: 2px solid #de9036;
-  
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-article {
-  font-size: 1.1rem;
-  padding: 20px;
-  color: #8e8d8a;
-}
-
-code {
-  display: block;
-  text-align: left;
-  justify-content: center;
-  white-space: pre-line;
-  position: relative;
-  word-break: normal;
-  word-wrap: normal;
-  line-height: 2;
-  color: #8e8d8a;
-  background: rgba(0,0,0,.05);
-  padding: 15px;
-  margin: 10px;
-  border: 2px solid #de9036;
-  border-radius: 5px;
-}
-
-@media only screen and (max-width: 600px) {
-  /* For mobile phones: */
-
-
-  #navbar ul {
-    border: 1px solid #de9036;
-    height: 300px;
-    background: #eae7dc; 
-  }
-
-  #navbar {
-    position: fixed;
-    top: 0;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    max-height: 300px;
-    z-index: 1;
-  }
-
-  #main-doc {
-    position: absolute;
-    margin-left: 0px;
-  }
-}
-
-
-@media only screen and (max-width: 400px) {
-  #main-doc {
-    margin-left: -10px;
-  }
-
-  code {
-    margin-left: -20px;
-    width: auto;
-    padding: 15px;
-    padding-left: 10px;
-    padding-right: 45px;
-    min-width: 233px;
-  }
-}
-    </style>
+        * {
+          font-family: 'Ubuntu Mono', monospace;
+          scroll-behavior: smooth;
+          background-color: #212121;
+        }
+        
+        #navbar {
+          position: fixed;
+          min-width: 290px;
+          top: 0px;
+          left: 0px;
+          width: 300px;
+          height: 100%;
+          border-right: 1px solid #d4d4d4;
+          z-index: 1;
+        }
+        
+        #navbar ul {
+          height: 88%;
+          padding: 0;
+          overflow-y: auto;
+          overflow-x: hidden;
+        }
+        
+        #navbar li {
+          list-style: none;
+          position: relative;
+          width: 100%;
+        }
+        
+        #navbar a:hover {
+            color: white;
+        }
+        
+        #navbar a {
+          display: block;
+          padding: 10px 30px;
+          font-size: 1.1rem;
+          text-align: center;
+          text-decoration: none;
+          color: #d4d4d4;
+          cursor: pointer;
+        }
+        #reference a {
+          text-decoration: none;
+          font-style: italic;
+          color: #d4d4d4;
+        }
+        
+        #reference a:hover {
+          text-decoration: underline;
+        }
+         
+        main {
+          margin-left: 300px;
+          padding-left: 50px;
+          padding-right: 50px;
+          text-align: justify;
+        }
+        
+        nav header {
+          text-align: center;
+          color: white;
+          margin-top: 100px;
+          font-size: 1.3rem;
+          padding: 10px;
+          border-radius: 3px;
+        }
+        
+        #main-doc header {
+          text-align: center;
+          color: white;
+          font-size: 1.3rem;
+          padding: 10px;
+          border-radius: 3px;
+        }
+        
+        section {
+          
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
+        
+        article {
+          font-size: 1.1rem;
+          padding: 20px;
+          color: #d4d4d4;
+        }
+        code {
+          display: block;
+          text-align: left;
+          justify-content: center;
+          white-space: pre-line;
+          position: relative;
+          word-break: normal;
+          word-wrap: normal;
+          line-height: 2;
+          color: #212121;
+          background: rgba(212, 212, 212, 0.5);
+          padding: 15px;
+          margin: 10px;
+          border-radius: 5px;
+        }
+        </style>
   </head>
   <body>
     <nav id="navbar">
-      <header><i><strong>JS Documentation</strong></i></header>
+      <header><strong>JS Documentation</strong></header>
       <ul>
         <li><a class="nav-link" href="#introduction">Introduction</a></li>
         <li><a class="nav-link" href="#what_you_should_already_know">What you should already know</a></li>
@@ -199,7 +133,7 @@ code {
     </nav>
     <main id="main-doc">
     <section class="main-section" id="introduction">
-    <header><i><strong>Introduction</strong></i></header>    
+    <header><strong>Introduction</strong></header>    
     <article>
         <p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.</p>
         <p>JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:
@@ -211,7 +145,7 @@ code {
         </article>
       </section>
       <section class="main-section" id="what_you_should_already_know">
-        <header><i><strong>What you should already know</strong></i></header>
+        <header><strong>What you should already know</strong></header>
         <article>
         <p>This guide assumes you have the following basic background:</p>
         <ul>
@@ -378,5 +312,3 @@ statement_4_runs_if_condition_is_false; }</code>
     </main>
   </body>
 </html>
-
-
